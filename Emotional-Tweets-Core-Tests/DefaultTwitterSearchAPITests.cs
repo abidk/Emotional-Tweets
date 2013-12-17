@@ -1,8 +1,8 @@
-using NUnit.Framework;
 using System;
 using service.EmotionalTweetsCore;
 using System.Collections.Generic;
 using Spring.Social.Twitter.Api;
+using NUnit.Framework;
 
 namespace EmotionalTweetsCoreTests
 {
