@@ -18,6 +18,10 @@ namespace EmotionalTweets
 
 			SetContentView (Resource.Layout.Main);
 
+			var submit = FindViewById<Button> (Resource.Id.search_tweets);
+			submit.Click += delegate {
+				StartActivity(typeof(TweetsActivity));
+			};
 		}
 	}
 }
