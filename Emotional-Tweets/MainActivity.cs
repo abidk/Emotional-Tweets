@@ -5,7 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using EmotionalTweetsCore;
+using service.EmotionalTweetsCore;
 
 namespace EmotionalTweets
 {
@@ -24,7 +24,7 @@ namespace EmotionalTweets
 				StartActivity(typeof(TweetsActivity));
 			};
 
-			MyClass a = new MyClass ();
+			TwitterSearchAPI a = new DefaultTwitterSearchAPI();
 		}
 	}
 }
