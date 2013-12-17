@@ -1,13 +1,19 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Emotional-Tweets\MainActivity.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
-      <File FileName="Emotional-Tweets\MainActivity.cs" Line="1" Column="1" />
+      <File FileName="Emotional-Tweets\MainActivity.cs" Line="24" Column="6" />
+      <File FileName="Emotional-Tweets\TweetsActivity.cs" Line="20" Column="4" />
+      <File FileName="Emotional-Tweets-Core\MyClass.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True">
-          <Node name="Emotional-Tweets" expanded="True" />
+        <State expanded="True">
+          <Node name="Emotional-Tweets" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="ComponentReferenceFolder" selected="True" />
+          </Node>
+          <Node name="Emotional-Tweets-Core" expanded="True" />
         </State>
       </Pad>
     </Pads>
@@ -16,4 +22,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Emotional-Tweets MonoForAntroid.PreferredDevice="3.7in WVGA (Nexus One)" />
 </Properties>

@@ -64,4 +64,10 @@
     <AndroidResource Include="Resources\layout\Tweets.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\Emotional-Tweets-Core\Emotional-Tweets-Core.csproj">
+      <Project>{0DDA0F59-CA75-4357-8C30-AAC551064A54}</Project>
+      <Name>Emotional-Tweets-Core</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>

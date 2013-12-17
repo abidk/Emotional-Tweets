@@ -5,6 +5,7 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using EmotionalTweetsCore;
 
 namespace EmotionalTweets
 {
@@ -22,6 +23,8 @@ namespace EmotionalTweets
 			submit.Click += delegate {
 				StartActivity(typeof(TweetsActivity));
 			};
+
+			MyClass a = new MyClass ();
 		}
 	}
 }

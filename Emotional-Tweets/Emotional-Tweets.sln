@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets", "Emotional-Tweets\Emotional-Tweets.csproj", "{923D155C-D2CD-4A89-A508-889ECBDB4DD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets", "Emotional-Tweets.csproj", "{923D155C-D2CD-4A89-A508-889ECBDB4DD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets-Core", "Emotional-Tweets-Core\Emotional-Tweets-Core.csproj", "{0DDA0F59-CA75-4357-8C30-AAC551064A54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets-Core", "..\Emotional-Tweets-Core\Emotional-Tweets-Core.csproj", "{0DDA0F59-CA75-4357-8C30-AAC551064A54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +21,6 @@ Global
 		{923D155C-D2CD-4A89-A508-889ECBDB4DD8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = Emotional-Tweets\Emotional-Tweets.csproj
+		StartupItem = Emotional-Tweets.csproj
 	EndGlobalSection
 EndGlobal
