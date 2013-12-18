@@ -16,8 +16,8 @@ namespace service.EmotionalTweetsCore
 	{
 		const string TWITTER_OAUTH_URL = "https://api.twitter.com/oauth2/token";
 		const string TWITTER_SEARCH_URL = "https://api.twitter.com/1.1/search/tweets.json?q={0}";
-		const string TWITTER_OAUTH_CONSUMER_KEY = "PCz5NVJEQ1JlI90GwltYg";
-		const string TWITTER_OAUTH_CONSUMER_SECRET = "DOwy1VueP9oQVqQL0EcLZ1OVykovLdZEtQOl0uCa2FY";
+		const string TWITTER_OAUTH_CONSUMER_KEY = "...";
+		const string TWITTER_OAUTH_CONSUMER_SECRET = "...";
 
 		private AccessToken accessToken;
 
@@ -32,7 +32,7 @@ namespace service.EmotionalTweetsCore
 			request.Method = "Get";
 
 			var tweets = new List<Tweet>();
-			var response = JObject.Parse(getResponseString(request.GetResponse()));
+			var response = JObject.Parse(StringUtils.GetResponseString(request.GetResponse()));
 			var statuses = response["statuses"];
 
 			foreach(var item in statuses) {
@@ -71,16 +71,8 @@ namespace service.EmotionalTweetsCore
 				stream.Write(content, 0, content.Length);
 			}
 
-			var response = getResponseString(request.GetResponse());
+			var response = StringUtils.GetResponseString(request.GetResponse());
 			return JsonConvert.DeserializeObject<AccessToken>(response);
-		}
-
-		private string getResponseString(WebResponse response)
-		{
-			using (Stream stream = response.GetResponseStream())
-			{
-				return new StreamReader(stream, Encoding.UTF8).ReadToEnd();
-			}
 		}
 
 	}

@@ -41,9 +41,14 @@
     <Compile Include="service\TwitterSearchAPI.cs" />
     <Compile Include="model\Tweet.cs" />
     <Compile Include="model\AccessToken.cs" />
+    <Compile Include="service\SentimentAnalysisAPI.cs" />
+    <Compile Include="service\DefaultSentimentAnalysisAPI.cs" />
+    <Compile Include="utils\StringUtils.cs" />
+    <Compile Include="model\SentimentResult.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="model\" />
+    <Folder Include="utils\" />
   </ItemGroup>
 </Project>
