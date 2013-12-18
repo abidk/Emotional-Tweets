@@ -66,6 +66,9 @@
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\Tweets.axml" />
     <AndroidResource Include="Resources\layout\list_item_tweet.axml" />
+    <AndroidResource Include="Resources\drawable\happy.png" />
+    <AndroidResource Include="Resources\drawable\neutral.png" />
+    <AndroidResource Include="Resources\drawable\sad.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

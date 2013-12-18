@@ -18,6 +18,7 @@ namespace EmotionalTweets
 		public const string SEARCH_TEXT_KEY = "search_text_key";
 
 		private TwitterSearchAPI searchApi = new DefaultTwitterSearchAPI();
+		private SentimentAnalysisAPI sentimentApi = new DefaultSentimentAnalysisAPI();
 
 		private ListView tweetsList;
 
@@ -32,8 +33,11 @@ namespace EmotionalTweets
 
 			IList<TweetItem> listItems = new List<TweetItem>();
 			foreach(var tweet in tweets) {
+				var sentimentResult = sentimentApi.analyse(tweet.Text);
+
 				var item = new TweetItem();
-				item.tweet = tweet;
+				item.Tweet = tweet;
+				item.Sentiment = sentimentResult;
 
 				listItems.Add (item);
 			}

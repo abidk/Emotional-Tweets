@@ -47,16 +47,30 @@ namespace EmotionalTweets
 
 
 			var name = itemView.FindViewById<TextView>(Resource.Id.tweet_screenname);
-			name.Text = "@" + item.tweet.ScreenName;
+			name.Text = "@" + item.Tweet.ScreenName;
 
 			var text = itemView.FindViewById<TextView>(Resource.Id.tweet_text);
-			text.Text = item.tweet.Text;
+			text.Text = item.Tweet.Text;
 
 
 			var time = itemView.FindViewById<TextView>(Resource.Id.tweet_time);
-			time.Text = DateUtils.GetRelativeTimeSpanString(item.tweet.CreatedDate.ToFileTime());
+			time.Text = DateUtils.GetRelativeTimeSpanString(item.Tweet.CreatedDate.ToFileTime());
+
+			var emotion = itemView.FindViewById<ImageView>(Resource.Id.tweet_emotion);
+			emotion.SetImageResource(GetEmotionImage(item.Sentiment.Value));
 
 			return itemView;
+		}
+
+		private int GetEmotionImage(decimal value)
+		{
+			if (value > 0) {
+				return Resource.Drawable.happy;
+			} else if (value < 0) {
+				return Resource.Drawable.sad;
+			} else {
+				return Resource.Drawable.neutral;
+			}
 		}
 
 		public override int Count {
