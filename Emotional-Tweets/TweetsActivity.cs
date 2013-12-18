@@ -21,8 +21,6 @@ namespace EmotionalTweets
 
 			string searchText = Intent.GetStringExtra (SEARCH_TEXT_KEY) ?? null;
 
-			var search = FindViewById<TextView> (Resource.Id.textView1);
-			search.Text = searchText;
 		}
 
 	}
