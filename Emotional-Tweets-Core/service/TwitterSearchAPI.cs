@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Spring.Social.Twitter.Api;
+using EmotionalTweetsCore;
 
 namespace service.EmotionalTweetsCore
 {

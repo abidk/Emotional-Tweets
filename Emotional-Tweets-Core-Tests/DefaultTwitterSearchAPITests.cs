@@ -1,20 +1,28 @@
 using System;
-using service.EmotionalTweetsCore;
 using System.Collections.Generic;
-using Spring.Social.Twitter.Api;
 using NUnit.Framework;
+using service.EmotionalTweetsCore;
+using EmotionalTweetsCore;
 
 namespace EmotionalTweetsCoreTests
 {
-	[TestFixture ()]
+	[TestFixture]
 	public class DefaultTwitterSearchAPITests
 	{
-		[Test ()]
-		public void TestCase ()
+		DefaultTwitterSearchAPI api;
+
+		[SetUp]
+		public void setUp()
 		{
-			var api = new DefaultTwitterSearchAPI();
-			IList<Tweet> tweets = api.search("Test");
-			Assert.AreEqual(15, tweets.Count);
+			api = new DefaultTwitterSearchAPI();
+		}
+
+		[Test]
+		public void SearchShouldReturnTweetResults()
+		{
+			IList<Tweet> tweets = api.search("This is a test");
+
+			Assert.IsTrue(tweets.Count > 0);
 		}
 	}
 }
