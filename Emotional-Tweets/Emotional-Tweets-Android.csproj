@@ -48,10 +48,12 @@
     <Reference Include="System.Json" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainActivity.cs" />
     <Compile Include="TweetsActivity.cs" />
+    <Compile Include="adapter\TweetAdapter.cs" />
+    <Compile Include="model\TweetItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -63,6 +65,7 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\Tweets.axml" />
+    <AndroidResource Include="Resources\layout\list_item_tweet.axml" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
@@ -70,5 +73,9 @@
       <Project>{0DDA0F59-CA75-4357-8C30-AAC551064A54}</Project>
       <Name>Emotional-Tweets-Core</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="adapter\" />
+    <Folder Include="model\" />
   </ItemGroup>
 </Project>
