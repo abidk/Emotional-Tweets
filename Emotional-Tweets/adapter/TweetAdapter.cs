@@ -33,6 +33,11 @@ namespace EmotionalTweets
 			return position;
 		}
 
+		public void Add(TweetItem item)
+		{
+			_items.Add (item);
+		}
+
 		public override Android.Views.View GetView (int position, Android.Views.View convertView, Android.Views.ViewGroup parent)
 		{
 			var itemView = convertView;
