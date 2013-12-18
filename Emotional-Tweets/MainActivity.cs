@@ -19,12 +19,15 @@ namespace EmotionalTweets
 
 			SetContentView (Resource.Layout.Main);
 
+			var searchText = FindViewById<EditText> (Resource.Id.search_text);
+
 			var submit = FindViewById<Button> (Resource.Id.search_tweets);
 			submit.Click += delegate {
-				StartActivity(typeof(TweetsActivity));
-			};
+				var activity = new Intent (this, typeof(TweetsActivity));
+				activity.PutExtra (TweetsActivity.SEARCH_TEXT_KEY, searchText.Text);
 
-			TwitterSearchAPI a = new DefaultTwitterSearchAPI();
+				StartActivity(activity);
+			};
 		}
 	}
 }

@@ -11,6 +11,7 @@ namespace EmotionalTweets
 	[Activity (Label = "Tweets")]
 	public class TweetsActivity : Activity
 	{
+		public const string SEARCH_TEXT_KEY = "search_text_key";
 
 		protected override void OnCreate (Bundle bundle)
 		{
@@ -18,7 +19,12 @@ namespace EmotionalTweets
 
 			SetContentView (Resource.Layout.Tweets);
 
+			string searchText = Intent.GetStringExtra (SEARCH_TEXT_KEY) ?? null;
+
+			var search = FindViewById<TextView> (Resource.Id.textView1);
+			search.Text = searchText;
 		}
+
 	}
 }
 

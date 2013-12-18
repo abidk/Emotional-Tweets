@@ -64,7 +64,13 @@ namespace EmotionalTweets
 		{
 			
 			// aapt resource value: 0x7f060000
-			public const int search_tweets = 2131099648;
+			public const int search_text = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int search_tweets = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int textView1 = 2131099650;
 			
 			static Id()
 			{

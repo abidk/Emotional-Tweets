@@ -16,8 +16,8 @@ namespace service.EmotionalTweetsCore
 	{
 		const string TWITTER_OAUTH_URL = "https://api.twitter.com/oauth2/token";
 		const string TWITTER_SEARCH_URL = "https://api.twitter.com/1.1/search/tweets.json?q={0}";
-		const string TWITTER_OAUTH_CONSUMER_KEY = "...";
-		const string TWITTER_OAUTH_CONSUMER_SECRET = "...";
+		const string TWITTER_OAUTH_CONSUMER_KEY = "PCz5NVJEQ1JlI90GwltYg";
+		const string TWITTER_OAUTH_CONSUMER_SECRET = "DOwy1VueP9oQVqQL0EcLZ1OVykovLdZEtQOl0uCa2FY";
 
 		private AccessToken accessToken;
 
