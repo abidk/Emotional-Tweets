@@ -28,7 +28,7 @@ namespace service.EmotionalTweetsCore
 			}
 
 
-			String url =  WebUtility.UrlEncode(String.Format (TWITTER_SEARCH_URL, text));
+			String url =  String.Format (TWITTER_SEARCH_URL, WebUtility.UrlEncode(text));
 			var request = WebRequest.Create(url);
 			request.Headers.Add("Authorization", string.Format("{0} {1}", accessToken.token_type, accessToken.access_token));
 			request.Method = "Get";
