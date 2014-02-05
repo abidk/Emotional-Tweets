@@ -16,8 +16,8 @@ namespace service.EmotionalTweetsCore
 	{
 		const string TWITTER_OAUTH_URL = "https://api.twitter.com/oauth2/token";
 		const string TWITTER_SEARCH_URL = "https://api.twitter.com/1.1/search/tweets.json?q={0}";
-		const string TWITTER_OAUTH_CONSUMER_KEY = "...";
-		const string TWITTER_OAUTH_CONSUMER_SECRET = "...";
+		const string TWITTER_OAUTH_CONSUMER_KEY = "Ykg56zZYXlxQLjyK4DQ";
+		const string TWITTER_OAUTH_CONSUMER_SECRET = "r9NIHabDzuZTYHrlYxpAjqVIzRrrStsEiY7Pry6Ec";
 
 		private AccessToken accessToken;
 
@@ -27,7 +27,9 @@ namespace service.EmotionalTweetsCore
 				accessToken = retrieveAccessToken();
 			}
 
-			var request = WebRequest.Create(String.Format(TWITTER_SEARCH_URL, text));
+
+			String url =  WebUtility.UrlEncode(String.Format (TWITTER_SEARCH_URL, text));
+			var request = WebRequest.Create(url);
 			request.Headers.Add("Authorization", string.Format("{0} {1}", accessToken.token_type, accessToken.access_token));
 			request.Method = "Get";
 
