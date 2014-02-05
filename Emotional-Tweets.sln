@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets", "Emotion
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets-Core", "Emotional-Tweets-Core\Emotional-Tweets-Core.csproj", "{0DDA0F59-CA75-4357-8C30-AAC551064A54}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets-Android-Tests", "Emotional-Tweets-Android-Tests\Emotional-Tweets-Android-Tests.csproj", "{D7626838-36D1-4CBD-9E24-164045BDAD20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Emotional-Tweets-Core-Tests", "Emotional-Tweets-Core-Tests\Emotional-Tweets-Core-Tests.csproj", "{BAD85D24-3998-416A-8604-0B9B7A1D7820}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +23,14 @@ Global
 		{923D155C-D2CD-4A89-A508-889ECBDB4DD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{923D155C-D2CD-4A89-A508-889ECBDB4DD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{923D155C-D2CD-4A89-A508-889ECBDB4DD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAD85D24-3998-416A-8604-0B9B7A1D7820}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAD85D24-3998-416A-8604-0B9B7A1D7820}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAD85D24-3998-416A-8604-0B9B7A1D7820}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAD85D24-3998-416A-8604-0B9B7A1D7820}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7626838-36D1-4CBD-9E24-164045BDAD20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7626838-36D1-4CBD-9E24-164045BDAD20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7626838-36D1-4CBD-9E24-164045BDAD20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7626838-36D1-4CBD-9E24-164045BDAD20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Emotional-Tweets\Emotional-Tweets.csproj
